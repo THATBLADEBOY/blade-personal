@@ -56,8 +56,8 @@ export const HeroSection = () => (
           </svg>
         </motion.span>
       </span>
-      <span className="text-7xl text-black md:text-[170px] bg-yellow-400 px-8">
-        BLADE
+      <span className="bg-yellow-400 px-8">
+        <p className="text-7xl -mb-4 text-black md:text-[170px]">BLADE</p>
       </span>
     </h1>
     <div className="text-white  text-sm md:text-lg flex flex-col justify-center items-center w-full relative">
