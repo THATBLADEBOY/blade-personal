@@ -35,8 +35,8 @@ dependencies:
 
 devDependencies:
   '@flydotio/dockerfile':
-    specifier: ^0.2.16
-    version: 0.2.16
+    specifier: ^0.3.3
+    version: 0.3.3
   '@remix-run/dev':
     specifier: ^1.18.1
     version: 1.18.1(@remix-run/serve@1.18.1)
@@ -1665,8 +1665,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@flydotio/dockerfile@0.2.16:
-    resolution: {integrity: sha512-2A0h2S2mAopa2YQ3tabbuxDw6gST4Ork5omfyP/ywO4Ma3nr0Odep70xv1VwiL7tVYk0P3ezUV8/tmdTIr0U1g==}
+  /@flydotio/dockerfile@0.3.3:
+    resolution: {integrity: sha512-R3W5M+FlslD3cDU/tcSZpxjEVJol3AOXasROrEauCiqBAf+upUr2V2Fp1IP9/tAwlpYz5894bPSdqeCUp05ruA==}
     engines: {node: '>=16.0.0'}
     hasBin: true
     dependencies:
