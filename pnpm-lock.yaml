@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@remix-run/css-bundle':
-    specifier: ^1.18.1
-    version: 1.18.1
+    specifier: ^1.19.3
+    version: 1.19.3
   '@remix-run/node':
     specifier: ^1.18.1
     version: 1.18.1
@@ -1807,8 +1807,8 @@ packages:
       tslib: 2.6.0
     dev: true
 
-  /@remix-run/css-bundle@1.18.1:
-    resolution: {integrity: sha512-j6CflpY3fmMb1chZLBvNPifLmAVWexXJ+tiiZKwXC/eVIrbKADlQCsWmTdYPjsMP+OkZja7TGdSivqQOjCAu0Q==}
+  /@remix-run/css-bundle@1.19.3:
+    resolution: {integrity: sha512-XccfuPmTdtXT+Kx7Df62cyk8d2I6DrHIB02uDyIGOTq8lPlMXznErMW14asVcbGOV5ieAOvnch/pUJrsKoWRmw==}
     engines: {node: '>=14.0.0'}
     dev: false
 
