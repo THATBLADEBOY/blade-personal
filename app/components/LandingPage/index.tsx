@@ -1,7 +1,7 @@
 import type { LoaderFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
-import { AboutSection } from "./AboutSection";
-import { BlogSection } from "./BlogSection";
+// import { AboutSection } from "./AboutSection";
+// import { BlogSection } from "./BlogSection";
 import { HeroSection } from "./HeroSection";
 import type { BlogList } from "~/data/blogList.server";
 import { blogList } from "~/data/blogList.server";
@@ -16,10 +16,10 @@ type LandingPageProps = {
 
 export const LandingPage = ({ posts }: LandingPageProps) => {
   return (
-    <section className="space-y-16 ">
+    <section className="flex flex-col space-between items-center h-full">
       <HeroSection />
-      <AboutSection />
-      <BlogSection posts={posts} />
+      {/* <AboutSection /> */}
+      {/* <BlogSection posts={posts} /> */}
     </section>
   );
 };

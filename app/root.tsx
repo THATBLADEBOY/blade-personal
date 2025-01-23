@@ -8,7 +8,6 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import stylesheet from "~/tailwind.css";
-import { Footer } from "./components/Footer";
 import { NavigationBar } from "./components/NavigationBar";
 
 export const links: LinksFunction = () => [
@@ -24,17 +23,16 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="flex flex-col min-h-screen container mx-auto">
         <div className="fixed inset-0 bg-circuit-board" aria-hidden="true" />
-        {/* defining the makes content width and layout */}
         <NavigationBar />
-        <div className="relative min-h-screen max-w-7xl py-24 mx-auto px-4 sm:px-6 lg:px-8 bg-black">
+        <div className="flex-grow flex flex-col w-full justify-center items-center relative mx-auto bg-black">
           <Outlet />
-          <ScrollRestoration />
-          <Scripts />
-          <LiveReload />
-          <Footer />
         </div>
+        {/* <Footer /> */}
+        <ScrollRestoration />
+        <Scripts />
+        <LiveReload />
       </body>
     </html>
   );

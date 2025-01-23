@@ -1,11 +1,8 @@
-// import { SocialList } from "components/common/SocialList";
-
 import { motion } from "framer-motion";
 import { TextLoop } from "../TextLoop";
-import { SocialLinks } from "../SocialLinks";
 
 export const HeroSection = () => (
-  <div className="flex justify-center flex-col items-center pt-12">
+  <div className="flex justify-center flex-col h-full items-center">
     <h1 className="text-7xl font-bold md:text-[120px] leading-none flex justify-center items-center flex-col  text-white">
       <span className="flex justify-center items-center">
         <motion.span
@@ -57,11 +54,13 @@ export const HeroSection = () => (
         </motion.span>
       </span>
       <span className="bg-yellow-400 px-8">
-        <p className="text-7xl -mb-4 text-black md:text-[170px]">BLADE</p>
+        <p className="text-7xl -mb-2  md:-mb-4 text-black md:text-[170px]">
+          BLADE
+        </p>
       </span>
     </h1>
     <div className="text-white  text-sm md:text-lg flex flex-col justify-center items-center w-full relative">
-      <div className=" -mt-1 -mb-2 bg-black border-black border-2 px-2 max-w-fit text-sm md:text-lg rotate-6 drop-shadow-xl z-50 shadow-black font-bold">
+      <div className="-mt-1 -mb-2 bg-black border-black border-2 px-2 max-w-fit text-sm md:text-lg rotate-6 drop-shadow-xl z-50 shadow-black font-bold">
         LOVES{" "}
         <motion.div
           animate={{ scale: [1, 1.1, 1] }}
@@ -76,14 +75,28 @@ export const HeroSection = () => (
           texts={[
             "BUILDING COOL THINGS",
             "TECHNOLOGY",
-            "SOFTWARE DEVELOPMENT",
+            "SOFTWARE",
             "HELPING OTHERS LEARN",
+            "TYPESCRIPT",
+            "POKEMON",
           ]}
         />
       </div>
     </div>
-    <div className="mt-12 justify-center items-center w-full max-w-2xl">
-      <SocialLinks />
+    <div className="mt-12 flex flex-col md:flex-row justify-center items-center w-full max-w-2xl">
+      <a
+        href="/Austin-Blade-Software-Engineer.pdf"
+        download
+        className="border-yellow-400 border-2 text-yellow-400 font-bold px-4 py-2 mb-4 md:mb-0 md:mr-4 w-full md:w-auto text-center hover:bg-yellow-400 hover:text-black transition duration-300"
+      >
+        Download My Resume
+      </a>
+      <a
+        href="mailto:hello@austinblade.com"
+        className="border-white border-2 text-white font-bold px-4 py-2 w-full md:w-auto text-center hover:bg-white hover:text-black transition duration-300"
+      >
+        Email Me
+      </a>
     </div>
   </div>
 );

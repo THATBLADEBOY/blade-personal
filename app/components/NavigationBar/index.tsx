@@ -6,12 +6,12 @@ import logo from "public/svgs/logo.svg";
 import { useEffect, useState } from "react";
 
 const navItems = {
-  "/": {
-    name: "home",
-  },
-  "/blog": {
-    name: "blog",
-  },
+  // "/": {
+  //   name: "home",
+  // },
+  // "/blog": {
+  //   name: "blog",
+  // },
 };
 
 function Logo() {
@@ -56,6 +56,7 @@ export const NavigationBar = () => {
               id="nav"
             >
               <div className="flex flex-row space-x-2 w-full">
+                {/* @ts-expect-error: can remove this comment when navItems present */}
                 {Object.entries(navItems).map(([path, { name }]) => {
                   const isActive = path === pathname;
                   return (
